@@ -72,13 +72,25 @@ h1, h2, h3, h4, h5 {
 
 nav {
 	display: flex;
+	justify-content: space-between
+	align-items: flex-start;
+	border: 1px solid gray;
+}
+
+.links {
+	display: flex;
 	justify-content: space-evenly;
+	align-items: center;
+	border: 1px solid gray;
+
 }
 
 a {
 	text-decoration: none;
 	color: lightgray;
-	padding: 3%;
+	padding: 0px 25% 0px 0px;
+	border: 1px solid gray;
+
 }
 
 header {
