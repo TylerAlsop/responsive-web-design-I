@@ -57,6 +57,7 @@ table {
 html, body {
     height: 100%;
 	font-family: 'Titillium Web', sans-serif;
+	padding: 10px;
 	margin: auto;
 	width: 100%;
 }
@@ -197,7 +198,7 @@ address {
 
 .copyright {
 	text-align: center;
-	padding: 30px;
+	padding-top: 30px;
 }
 
 button {
@@ -274,8 +275,8 @@ ul {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		border-bottom: 1px solid gray;
 		width: 100%;
+		padding-top: 30px;
 	}
 }
 
