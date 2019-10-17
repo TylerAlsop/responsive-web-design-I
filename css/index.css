@@ -56,7 +56,7 @@ table {
 html, body {
     height: 100%;
 	font-family: 'Titillium Web', sans-serif;
-	width: 871px;
+	width: 1000px;
 	margin: auto;
 }
 
@@ -89,6 +89,7 @@ header {
 	align-items: center;
 }
 
+
 .name-and-button {
 	display: flex;
 	flex-direction: column;
@@ -102,7 +103,6 @@ h1 {
 	flex-direction: column;
 	padding-bottom: 10px;
 	font-size: 70px;
-
 }
 
 .get-started-button {
@@ -116,6 +116,10 @@ h1 {
 .main-body {
 	border-top: solid gray 2px;
 	border-bottom: solid gray 2px;
+}
+
+.main-body img {
+	width: 100%;
 }
 
 .features-about {
@@ -243,5 +247,8 @@ ul {
 	list-style-position: inside;
 }
 
+/* Tablet Width */
 
+@media (max-width: 800px){
 
+}
