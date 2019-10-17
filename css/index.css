@@ -278,20 +278,28 @@ ul {
 		width: 100%;
 		padding-top: 30px;
 	}
+
+	header img {
+		display: none;
+	}
+
 }
 
 /* PHONE WIDTH */
 @media (max-width: 500px) {
-	nav {
-		border-bottom: solid 1px gray;
-	}
 
 	.links {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
 		line-height: 2;
-		border-bottom: 1px solid gray;
+		border-bottom: 1px solid lightgray;
 		width: 100%;
+	}
+
+	nav a {
+		border-top: 1px solid lightgray;
+		width: 100%;
+		text-align: center;
 	}
 }
