@@ -1,3 +1,313 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+	max-width: 1000px;
+}
+
+html, body {
+    height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+	padding: 10px;
+	margin: auto;
+	width: 100%;
+}
 
 
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* border: 1px solid gray; */
+}
+
+.links {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* border: 1px solid gray; */
+	width: 70%;
+}
+
+a {
+	text-decoration: none;
+	color: lightgray;
+	/* padding: 0px 25% 0px 0px; */
+	/* border: 1px solid gray; */
+
+}
+
+header {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 50px;
+	width: 100%;
+	align-items: center;
+}
+
+header img {
+	width: 40%;
+}
+
+.name-and-button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	text-align: center;
+}
+
+h1 {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 10px;
+	font-size: 70px;
+}
+
+.get-started-button {
+	border: solid 1px;
+	width: 150px;
+	margin-left: 50 px;
+	text-align: center;
+	font-size: 15px;
+}
+
+.main-body {
+	border-top: solid gray 2px;
+	border-bottom: solid gray 2px;
+}
+
+.main-body img {
+	width: 100%;
+}
+
+.features-about {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 15px;
+}
+
+.features {
+	padding: 30px 15px;
+}
+
+.about {
+	padding: 30px 15px;
+}
+
+.middle-img {
+	display: flex;
+	justify-content: center;
+}
+
+.services-product-vision {
+	display: flex;
+	padding: 15px;
+}
+
+.services {
+	padding: 30px 15px;
+}
+
+.product {
+	padding: 30px 15px;
+}
+
+.vision {
+	padding: 30px 15px;	
+}
+
+footer {
+	padding: 30px;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 200px;
+	width: 200px;
+
+}
+
+.contact p {
+	padding: 10px;
+}
+
+address {
+	padding: 0px 10px 10px 0px;
+}
+
+.copyright {
+	text-align: center;
+	padding-top: 30px;
+}
+
+button {
+	border: solid 2px;
+}
+
+/* Services Page Specific */
+
+.services-header {
+	display: flex;
+	flex-direction: column;
+}
+.services-header-img {
+	display: flex;
+	justify-content: center;
+}
+
+.services-main-body {
+	border-top: solid gray 2px;
+	border-bottom: solid gray 2px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly
+	
+}
+
+.service-item {
+	display: flex;
+	flex-direction: column;
+	border: solid 1px;
+	padding: 30px;
+	margin: 30px;
+}
+
+.two-service-items {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.learn-more-button {
+	width: 150px;
+	height: 35px;
+	border: solid 1px;
+	border-radius: 5px;
+	margin: 15px 0px 0px 0px;
+}
+
+.service-bottom {
+	display: flex;
+	margin: 30px;
+}
+
+.service-facts {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 30px;
+}
+
+ul {
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+/* TABLET WIDTH */
+
+@media (max-width: 800px){
+	nav {
+		flex-direction: column-reverse;
+	}
+
+	.links {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding-top: 30px;
+	}
+
+	header img {
+		display: none;
+	}
+
+}
+
+/* PHONE WIDTH */
+@media (max-width: 500px) {
+
+	.links {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		line-height: 2;
+		border-bottom: 1px solid lightgray;
+		width: 100%;
+	}
+
+	nav a {
+		border-top: 1px solid lightgray;
+		width: 100%;
+		text-align: center;
+	}
+
+	.features-about {
+		flex-direction: column;
+	}
+
+	.services-product-vision {
+		flex-direction: column;
+	}
+}
